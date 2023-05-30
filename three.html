@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 80px;
+            background-color: blue;
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="box">knopochka</button>
+    <script>
+        var box = document.querySelector('.box');
+
+        function handleMouseEnter(){
+        box.style.backgroundColor = 'red';
+        box.style.color = 'blue';
+        }
+
+        function handleMouseLeave(){
+        box.style.backgroundColor = 'blue';
+        box.style.color = 'red';
+        }
+
+        box.addEventListener('mouseenter', handleMouseEnter);
+        box.addEventListener('mouseleave', handleMouseLeave);
+    </script>
+</body>
+</html>
